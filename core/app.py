@@ -57,7 +57,13 @@ class App:
                     t0 = time.time()
                 # forward
                 logits = self.model(None)
-                loss = loss_fcn(logits[train_mask], labels[train_mask])
+                labs=[]
+                for i in train_mask:
+                    labs.append(labels[i])
+                labs=torch.LongTensor(labs)
+                #print('labs:'+str(labs.size)+'  '+'\n'+str(labs))
+                #print('logits[train_mask]:'+str(len(logits[train_mask])))
+                loss = loss_fcn(logits[train_mask], labs)
 
                 optimizer.zero_grad()
                 loss.backward()
@@ -207,5 +213,8 @@ class App:
             acc = np.mean(self.accuracies)
 
         print("\nTest Accuracy {:.4f}".format(acc))
+
+        with open('./acc_file.txt', 'a+') as f:
+            f.write(str(acc) + '\n')
 
         return acc

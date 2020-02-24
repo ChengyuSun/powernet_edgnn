@@ -1,7 +1,6 @@
 {
     "layer_type": "edGNNLayer",
-    "edge_one_hot": true,
-    "node_one_hot": true,
+    "node_dim": 259,
     "layer_params": {
         "n_units": 64,
         "activation": "relu",

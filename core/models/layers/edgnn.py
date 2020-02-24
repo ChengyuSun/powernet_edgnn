@@ -79,16 +79,18 @@ class edGNNLayer(nn.Module):
         """
             If edge features: for each edge u->v, return as msg: MLP(concat([h_u, h_uv]))
         """
-        if self.g.edata is not None:
-            msg = torch.cat([edges.src[GNN_NODE_FEAT_IN_KEY],
-                             edges.data[GNN_EDGE_FEAT_KEY]],
-                            dim=1)
-            if self.dropout:
-                msg = self.dropout(msg)
-        else:
-            msg = edges.src[GNN_NODE_FEAT_IN_KEY]
-            if self.dropout:
-                msg = self.dropout(msg)
+        # if self.g.edata is not None:
+        #     print('edges.src[GNN_NODE_FEAT_IN_KEY]:'+str(edges.src[GNN_NODE_FEAT_IN_KEY]))
+        #     print('edges.data[GNN_EDGE_FEAT_KEY]:'+str(edges.data[GNN_EDGE_FEAT_KEY]))
+        #     msg = torch.cat([edges.src[GNN_NODE_FEAT_IN_KEY],
+        #                      edges.data[GNN_EDGE_FEAT_KEY]],
+        #                     dim=1)
+        #     if self.dropout:
+        #         msg = self.dropout(msg)
+        # else:
+        msg = edges.src[GNN_NODE_FEAT_IN_KEY]
+        if self.dropout:
+            msg = self.dropout(msg)
         return {GNN_MSG_KEY: msg}
 
     def gnn_reduce(self, nodes):
@@ -122,7 +124,8 @@ class edGNNLayer(nn.Module):
 
         # 2. set current iteration features
         self.g.ndata[GNN_NODE_FEAT_IN_KEY] = node_features
-        self.g.edata[GNN_EDGE_FEAT_KEY] = edge_features
+        if edge_features!=None:
+            self.g.edata[GNN_EDGE_FEAT_KEY] = edge_features
 
         # 3. aggregate messages
         self.g.update_all(self.gnn_msg,

@@ -6,10 +6,12 @@ import torch
 import argparse
 import importlib
 
+import powernet.pre_powernet as power
 from dgl.data import register_data_args
 
 from core.data.constants import GRAPH, N_RELS, N_CLASSES, N_ENTITIES, LABELS
 from core.models.constants import NODE_CLASSIFICATION, GRAPH_CLASSIFICATION
+from data.constants import TEST_MASK,TRAIN_MASK,VAL_MASK
 from core.models.constants import AIFB, MUTAG, MUTAGENICITY, PTC_FM, PTC_FR, PTC_MM, PTC_MR
 from core.models.model import Model
 from core.app import App
@@ -22,7 +24,32 @@ AVAILABLE_DATASETS = {
     'dglrgcn',
     'dortmund'
 }
+#
+# --dataset
+# ptc_fr
+# --config_fpath
+# ../core/models/config_files/config_edGNN_graph_class_ptc.json
+# --data_path
+# ./preprocessed_data/ptc_fr/
+# --n-epochs
+# 40
+# --gpu
+# -1
 
+# --dataset
+# aifb
+# --config_fpath
+# ../core/models/config_files/config_edGNN_node_class.json
+# --data_path
+# ../preprocessed_data/aifb/
+# --n-epochs
+# 400
+# --weight-decay
+# 0
+# --lr
+# 0.005
+# --gpu
+# -1
 
 def main(args):
 
@@ -34,23 +61,30 @@ def main(args):
 
     default_path = create_default_path()
     print('\n*** Set default saving/loading path to:', default_path)
-
-    if args.dataset == AIFB or args.dataset == MUTAG:
-        module = importlib.import_module(MODULE.format('dglrgcn'))
-        data = module.load_dglrgcn(args.data_path)
-        data = to_cuda(data) if cuda else data
-        mode = NODE_CLASSIFICATION
-    elif args.dataset == MUTAGENICITY or args.dataset == PTC_MR or args.dataset == PTC_MM or args.dataset == PTC_FR or args.dataset == PTC_FM:
-        module = importlib.import_module(MODULE.format('dortmund'))
-        data = module.load_dortmund(args.data_path)
-        data = to_cuda(data) if cuda else data
-        mode = GRAPH_CLASSIFICATION
-    else:
-        raise ValueError('Unable to load dataset', args.dataset)
+    #
+    # if args.dataset == AIFB or args.dataset == MUTAG:
+    #     module = importlib.import_module(MODULE.format('dglrgcn'))
+    #     data = module.load_dglrgcn(args.data_path)
+    #     data = to_cuda(data) if cuda else data
+    #     mode = NODE_CLASSIFICATION
+    # elif args.dataset == MUTAGENICITY or args.dataset == PTC_MR or args.dataset == PTC_MM or args.dataset == PTC_FR or args.dataset == PTC_FM:
+    #     module = importlib.import_module(MODULE.format('dortmund'))
+    #     data = module.load_dortmund(args.data_path)
+    #     data = to_cuda(data) if cuda else data
+    #     mode = GRAPH_CLASSIFICATION
+    # else:
+    #     raise ValueError('Unable to load dataset', args.dataset)
 
     #print_graph_stats(data[GRAPH])
 
-    print('len(data[labels]:  '+str(len(data['labels'])))
+    mode=NODE_CLASSIFICATION
+    data={}
+    data[GRAPH]=power.make_graph('1578646380')
+    data[N_CLASSES]=2
+    data[LABELS]=power.load_labels('1578646380')
+    data[TRAIN_MASK],data[TEST_MASK],data[VAL_MASK]=power.make_mask(674)
+
+    #print(data)
 
     config_params = read_params(args.config_fpath, verbose=True)
 
@@ -65,7 +99,7 @@ def main(args):
     app.test(data, default_path, mode=mode)
 
     # 3. Delete model
-    remove_model(default_path)
+    #remove_model(default_path)
 
 
 if __name__ == '__main__':
@@ -85,5 +119,6 @@ if __name__ == '__main__':
     parser.add_argument("--batch-size", type=int, default=16, help="batch size (only for graph classification)")
     # parser.add_argument("--dataset", type=str, required=True, help="dataset name")
     args = parser.parse_args()
+
 
     main(args)

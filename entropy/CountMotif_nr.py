@@ -2,7 +2,7 @@
 import numpy as np
 import csv
 import copy
-import entropy.io as io
+import entropy.utils as io
 # number of motif
 
 Nm = 8

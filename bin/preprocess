@@ -11,7 +11,21 @@ AVAILABLE_DATASETS = {
     'dglrgcn',
     'dortmund'
 }
+#
+# dortmund
+# --dataset
+# ptc_fr
+# --out_folder
+# ./preprocessed_data/ptc_fr
 
+#
+# dglrgcn
+# --dataset
+# aifb
+# --out_folder
+# ./preprocessed_data/aifb
+# --reverse_edges
+# True
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

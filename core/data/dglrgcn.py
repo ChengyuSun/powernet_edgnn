@@ -28,7 +28,6 @@ def preprocess_dglrgcn(*, dataset, out_folder, bfs_level=3, relabel=False, rever
         reverse_edges = strtobool(reverse_edges)
       
     data = load_data(dataset=dataset, bfs_level=bfs_level, relabel=relabel)
-
     labels = torch.squeeze(torch.LongTensor(data.labels))
 
     def _idx_to_mask(idx, n):
