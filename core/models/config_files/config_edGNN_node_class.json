@@ -2,8 +2,8 @@
     "layer_type": "edGNNLayer",
     "node_dim": 259,
     "layer_params": {
-        "n_units": 64,
-        "activation": "relu",
+        "n_units": 100,
+        "activation": "sigmod",
         "dropout": 0.5,
 	    "n_hidden_layers": 1
     }

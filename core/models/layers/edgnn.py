@@ -3,13 +3,13 @@ edGNN layer (add link to the paper)
 """
 import torch
 import torch.nn as nn
-
+import numpy as np
 from utils.inits import reset
 from utils.inits import init_weights
 from core.utils import reset_graph_features
 
 from core.models.constants import GNN_MSG_KEY, GNN_NODE_FEAT_IN_KEY, GNN_NODE_FEAT_OUT_KEY
-from core.models.constants import GNN_EDGE_FEAT_KEY, GNN_AGG_MSG_KEY
+from core.models.constants import GNN_EDGE_FEAT_KEY, GNN_AGG_MSG_KEY,GNN_EDGE_NORM
 
 
 class edGNNLayer(nn.Module):
@@ -64,7 +64,9 @@ class edGNNLayer(nn.Module):
         input_dim = 2 * self.node_dim
         if self.edge_dim is not None:
             input_dim = input_dim + self.edge_dim
-
+        print("input_dim:"+str(input_dim))
+        print('self.out_feats:'+str(self.out_feats))
+        print('self.bias:'+str(self.bias))
         self.linear = nn.Linear(input_dim, self.out_feats, bias=self.bias)
 
         # Dropout module
@@ -79,28 +81,36 @@ class edGNNLayer(nn.Module):
         """
             If edge features: for each edge u->v, return as msg: MLP(concat([h_u, h_uv]))
         """
-        # if self.g.edata is not None:
-        #     print('edges.src[GNN_NODE_FEAT_IN_KEY]:'+str(edges.src[GNN_NODE_FEAT_IN_KEY]))
-        #     print('edges.data[GNN_EDGE_FEAT_KEY]:'+str(edges.data[GNN_EDGE_FEAT_KEY]))
-        #     msg = torch.cat([edges.src[GNN_NODE_FEAT_IN_KEY],
-        #                      edges.data[GNN_EDGE_FEAT_KEY]],
-        #                     dim=1)
-        #     if self.dropout:
-        #         msg = self.dropout(msg)
-        # else:
-        msg = edges.src[GNN_NODE_FEAT_IN_KEY]
-        if self.dropout:
-            msg = self.dropout(msg)
+        if self.g.edata is not None:
+            # msg = torch.cat([edges.src[GNN_NODE_FEAT_IN_KEY],
+            #                  edges.data[GNN_EDGE_NORM]],
+            #                 dim=1)
+            # print('edges.src[GNN_NODE_FEAT_IN_KEY]:'+str(edges.src[GNN_NODE_FEAT_IN_KEY].size()))
+            # print('edges.data[GNN_EDGE_NORM]:'+str(edges.data[GNN_EDGE_NORM].size()))
+            # print('msg:'+str(msg.size()))
+            msg=edges.src[GNN_NODE_FEAT_IN_KEY]
+            if self.dropout:
+                #print('self.dropout')
+                msg = self.dropout(msg)
+                #print('msg:' + str(msg.size()))
+        else:
+            msg = edges.src[GNN_NODE_FEAT_IN_KEY]
+            if self.dropout:
+                msg = self.dropout(msg)
         return {GNN_MSG_KEY: msg}
 
     def gnn_reduce(self, nodes):
+        #print('nodes.mailbox[GNN_MSG_KEY]:'+str(nodes.mailbox[GNN_MSG_KEY].size()))
         accum = torch.sum((nodes.mailbox[GNN_MSG_KEY]), 1)
+        #print('accm:'+str(accum.size()))
         return {GNN_AGG_MSG_KEY: accum}
 
     def node_update(self, nodes):
         h = torch.cat([nodes.data[GNN_NODE_FEAT_IN_KEY],
                        nodes.data[GNN_AGG_MSG_KEY]],
                       dim=1)
+        # print('nodes.data[GNN_NODE_FEAT_IN_KEY]:'+str(nodes.data[GNN_NODE_FEAT_IN_KEY]))
+        # print('nodes.data[GNN_AGG_MSG_KEY]:'+str(nodes.data[GNN_AGG_MSG_KEY]))
         h = self.linear(h)
 
         if self.activation:

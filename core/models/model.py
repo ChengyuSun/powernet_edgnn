@@ -19,7 +19,8 @@ LAYER_MODULES = {
 }
 
 ACTIVATIONS = {
-    'relu': F.relu
+    'relu': F.relu,
+    'sigmod':F.sigmoid
 }
 
 
@@ -174,30 +175,24 @@ class Model(nn.Module):
 
         # 1. Build node features
         if isinstance(self.embed_nodes, nn.Embedding):
-            print('node feature Embedding')
             node_features = self.embed_nodes(self.g.ndata[GNN_NODE_LABELS_KEY])
         elif isinstance(self.embed_nodes, torch.Tensor):
-            print('node feature Tensor')
             label=self.g.ndata[GNN_NODE_LABELS_KEY].view(-1,1)
             node_features=torch.zeros(len(self.g.ndata[GNN_NODE_LABELS_KEY]), self.node_dim).scatter_(1 , label.long(), 1)
             #print('node_features[0]:  '+str(node_features.numpy()))
         else:
-            print('node feature zeros')
             node_features = torch.zeros(self.g.number_of_nodes(), self.node_dim)
         node_features = node_features.cuda() if self.is_cuda else node_features
 
         # 2. Build edge features
         if isinstance(self.embed_edges, nn.Embedding):
-            print('edge feature embedding')
             edge_features = self.embed_edges(self.g.edata[GNN_EDGE_LABELS_KEY])
         elif isinstance(self.embed_edges, torch.Tensor):
-            print('node feature Tensor')
             #edge_features = self.embed_edges[self.g.edata[GNN_EDGE_LABELS_KEY].type(torch.uint8)]
             label=self.g.edata[GNN_EDGE_LABELS_KEY].view(-1,1)
             edge_features=torch.zeros(len(self.g.edata[GNN_EDGE_LABELS_KEY]),self.edge_dim).scatter_(1,label.long(),1)
             #print('edge_features:  ' + str(edge_features))
         else:
-            print('node feature none')
             edge_features = None   #torch.zeros(len(self.g.edata[GNN_EDGE_LABELS_KEY]),)
 
 
@@ -233,8 +228,6 @@ class Model(nn.Module):
             for i in mask:
                 labs.append(labels[i])
             labs = torch.LongTensor(labs)
-            # print('labs:'+str(labs.size)+'  '+'\n'+str(labs))
-            # print('logits[train_mask]:'+str(len(logits[train_mask])))
             loss = loss_fcn(logits, labs)
             _, indices = torch.max(logits, dim=1)
             correct = torch.sum(indices == labs)
@@ -250,3 +243,7 @@ class Model(nn.Module):
             correct = torch.sum(indices == labels)
             return correct.item() * 1.0 / len(labels), loss
 
+    def power_out(self,input):
+        logits = self(None)
+        logits = logits[input]
+        return logits

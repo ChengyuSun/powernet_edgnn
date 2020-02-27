@@ -79,10 +79,10 @@ def main(args):
 
     mode=NODE_CLASSIFICATION
     data={}
-    data[GRAPH]=power.make_graph('1578646380')
+    data[GRAPH]=power.make_graph()
     data[N_CLASSES]=2
-    data[LABELS]=power.load_labels('1578646380')
-    data[TRAIN_MASK],data[TEST_MASK],data[VAL_MASK]=power.make_mask(674)
+    data[LABELS]=power.load_labels()
+    data[TRAIN_MASK],data[TEST_MASK],data[VAL_MASK]=power.make_mask(6740)
 
     #print(data)
 

@@ -2,40 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="117e8958-37b3-4f00-9f1f-abf37ee96b9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/average.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr_no_entropy/dataset.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr_no_entropy/graph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr_no_entropy/labels" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr_no_entropy/n_classes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr_no_entropy/n_entities" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr_no_entropy/n_relations" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr_no_entropy/unzipped/PTC_FR/PTC_FR_A.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr_no_entropy/unzipped/PTC_FR/PTC_FR_edge_labels.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr_no_entropy/unzipped/PTC_FR/PTC_FR_graph_indicator.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr_no_entropy/unzipped/PTC_FR/PTC_FR_graph_labels.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr_no_entropy/unzipped/PTC_FR/PTC_FR_node_labels.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr_no_entropy/unzipped/PTC_FR/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/powernet/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/powernet/checkpoint_ef40ad34-6e9a-4733-9ebd-bd0a2b72a4e1.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/powernet/power_interface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/powernet/power_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/pre_powernet.py" beforeDir="false" afterPath="$PROJECT_DIR$/powernet/pre_powernet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/preprocess" beforeDir="false" afterPath="$PROJECT_DIR$/bin/preprocess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/preprocessed_data/MUTAG/graph" beforeDir="false" afterPath="$PROJECT_DIR$/bin/preprocessed_data/MUTAG/graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/preprocessed_data/MUTAG/labels" beforeDir="false" afterPath="$PROJECT_DIR$/bin/preprocessed_data/MUTAG/labels" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr/graph" beforeDir="false" afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr/graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr/labels" beforeDir="false" afterPath="$PROJECT_DIR$/bin/preprocessed_data/ptc_fr/labels" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/run_model" beforeDir="false" afterPath="$PROJECT_DIR$/bin/run_model" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/dglrgcn.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/dglrgcn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/dortmund.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/dortmund.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/models/config_files/config_edGNN_node_class.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/models/config_files/config_edGNN_node_class.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/models/layers/edgnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models/layers/edgnn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/models/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entropy/CountMotif_nr.py" beforeDir="false" afterPath="$PROJECT_DIR$/entropy/CountMotif_nr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entropy/Entropy.py" beforeDir="false" afterPath="$PROJECT_DIR$/entropy/Entropy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entropy/io.py" beforeDir="false" afterPath="$PROJECT_DIR$/entropy/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/CountMotif_nr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/Entropy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/Normalize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/countedge.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data/graph1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data/graph10.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data/graph2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data/graph3.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data/graph4.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data/graph5.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data/graph6.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data/graph7.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data/graph8.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data/graph9.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data2/count_edge.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data2/devide_347_Nodes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data2/edge_entropy.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data2/graph10CE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/data2/graphfile.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/devideN.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/edge_entropy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/interface.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/kPCA.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/showPCA-ME.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entropy/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/powernet/power_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/powernet/power_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/powernet/pre_powernet.py" beforeDir="false" afterPath="$PROJECT_DIR$/powernet/pre_powernet.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,9 +45,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/edGNN$pre_powernet.coverage" NAME="pre_powernet Coverage Results" MODIFIED="1582341286109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/powernet" />
-    <SUITE FILE_PATH="coverage/edGNN$run_model.coverage" NAME="run_model Coverage Results" MODIFIED="1582386124740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bin" />
+    <SUITE FILE_PATH="coverage/edGNN$run_model.coverage" NAME="run_model Coverage Results" MODIFIED="1582733216243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bin" />
+    <SUITE FILE_PATH="coverage/edGNN$pre_powernet.coverage" NAME="pre_powernet Coverage Results" MODIFIED="1582773434553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/powernet" />
+    <SUITE FILE_PATH="coverage/edGNN$power_interface.coverage" NAME="power_interface Coverage Results" MODIFIED="1582773541548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/powernet" />
     <SUITE FILE_PATH="coverage/edGNN$devideN.coverage" NAME="devideN Coverage Results" MODIFIED="1578838906421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/entropy" />
+    <SUITE FILE_PATH="coverage/edGNN$test.coverage" NAME="test Coverage Results" MODIFIED="1582733523775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/powernet" />
     <SUITE FILE_PATH="coverage/edGNN$CountMotif_nr.coverage" NAME="CountMotif_nr Coverage Results" MODIFIED="1578965445594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/entropy" />
     <SUITE FILE_PATH="coverage/edGNN$interface.coverage" NAME="interface Coverage Results" MODIFIED="1581748397180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/entropy" />
     <SUITE FILE_PATH="coverage/edGNN$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1582208905733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bin" />
@@ -55,81 +58,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/run_model">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="108" column="64" lean-forward="true" selection-start-line="108" selection-start-column="64" selection-end-line="108" selection-end-column="64" />
-              <folding>
-                <element signature="e#49#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="210" column="48" selection-start-line="210" selection-start-column="48" selection-end-line="210" selection-end-column="48" />
+            <state relative-caret-position="100">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/powernet/power_interface.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#78#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/powernet/pre_powernet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
+            <state relative-caret-position="-1971">
+              <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/dgl/graph.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36775">
-              <caret line="1485" column="26" selection-start-line="1485" selection-start-column="26" selection-end-line="1485" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/models/layers/edgnn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1250">
-              <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/models/model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1542">
-              <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="8" />
-              <folding>
-                <element signature="e#24#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/data/dortmund.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2875">
-              <caret line="128" selection-start-line="128" selection-end-line="128" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,12 +131,14 @@
         <option value="$PROJECT_DIR$/venv/Lib/site-packages/dgl/contrib/data/knowledge_graph.py" />
         <option value="$PROJECT_DIR$/venv/Lib/site-packages/dgl/view.py" />
         <option value="$PROJECT_DIR$/core/models/layers/edgnn.py" />
-        <option value="$PROJECT_DIR$/core/models/config_files/config_edGNN_node_class.json" />
-        <option value="$PROJECT_DIR$/bin/run_model" />
-        <option value="$PROJECT_DIR$/powernet/pre_powernet.py" />
         <option value="$PROJECT_DIR$/core/app.py" />
-        <option value="$PROJECT_DIR$/core/models/model.py" />
+        <option value="$PROJECT_DIR$/bin/run_model" />
+        <option value="$PROJECT_DIR$/core/models/config_files/config_edGNN_node_class.json" />
+        <option value="$PROJECT_DIR$/powernet/test.py" />
         <option value="$PROJECT_DIR$/powernet/power_interface.py" />
+        <option value="$PROJECT_DIR$/core/models/model.py" />
+        <option value="$PROJECT_DIR$/README.txt" />
+        <option value="$PROJECT_DIR$/powernet/pre_powernet.py" />
       </list>
     </option>
   </component>
@@ -199,6 +157,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,53 +168,12 @@
             <path>
               <item name="edGNN" type="b2602c69:ProjectViewProjectNode" />
               <item name="edGNN" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edGNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edGNN" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="preprocessed_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edGNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edGNN" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edGNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edGNN" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edGNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edGNN" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edGNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edGNN" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="config_files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edGNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edGNN" type="462c0819:PsiDirectoryNode" />
               <item name="powernet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edGNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edGNN" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,17 +185,17 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PyCharm 2018.3.5\PyCharmProjects\edGNN\edGNN\powernet" />
+      <recent name="D:\PycharmProjects\edgnn\entropy\data2" />
+      <recent name="D:\PycharmProjects\edgnn\entropy" />
+      <recent name="F:\PyCharm 2018.3.5\PyCharmProjects\edGNN\edGNN\entropy" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\PyCharm 2018.3.5\PyCharmProjects\edGNN\edGNN\powernet" />
       <recent name="F:\PyCharm 2018.3.5\PyCharmProjects\edGNN\edGNN\bin" />
       <recent name="F:\PyCharm 2018.3.5\PyCharmProjects\edGNN\edGNN\bin\preprocessed_data" />
       <recent name="F:\PyCharm 2018.3.5\PyCharmProjects\edGNN\edGNN\entropy\data" />
-      <recent name="F:\PyCharm 2018.3.5\PyCharmProjects\edGNN\edGNN\entropy" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\PyCharm 2018.3.5\PyCharmProjects\edGNN\edGNN\powernet" />
-      <recent name="D:\PycharmProjects\edgnn\entropy\data2" />
-      <recent name="D:\PycharmProjects\edgnn\entropy" />
       <recent name="F:\PyCharm 2018.3.5\PyCharmProjects\edGNN\edGNN\entropy" />
     </key>
   </component>
@@ -293,51 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run_model">
-    <configuration name="Entropy2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="edGNN" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/entropy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/entropy/Entropy2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="average" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="edGNN" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bin/average.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.power_interface">
     <configuration name="interface" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="edGNN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -352,6 +226,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/entropy/interface.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="power_interface" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="edGNN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/powernet" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/powernet/power_interface.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -426,21 +322,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="edGNN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/powernet" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="F:\PyCharm 2018.3.5\PyCharmProjects\edGNN\edGNN\powernet\power_interface.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.preprocess" />
       <item itemvalue="Python.interface" />
       <item itemvalue="Python.run_model" />
-      <item itemvalue="Python.Entropy2" />
-      <item itemvalue="Python.average" />
       <item itemvalue="Python.pre_powernet" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.power_interface" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run_model" />
+        <item itemvalue="Python.power_interface" />
         <item itemvalue="Python.pre_powernet" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.run_model" />
         <item itemvalue="Python.interface" />
-        <item itemvalue="Python.average" />
-        <item itemvalue="Python.Entropy2" />
       </list>
     </recent_temporary>
   </component>
@@ -463,7 +381,8 @@
       <workItem from="1581587669613" duration="41210000" />
       <workItem from="1581852906794" duration="2740000" />
       <workItem from="1581911277108" duration="87233000" />
-      <workItem from="1582521189417" duration="1311000" />
+      <workItem from="1582521189417" duration="2116000" />
+      <workItem from="1582624283318" duration="31107000" />
     </task>
     <task id="LOCAL-00001" summary="1.16fromlab">
       <created>1579140807777</created>
@@ -556,11 +475,18 @@
       <option name="project" value="LOCAL" />
       <updated>1581820881715</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="0224电网模型分类效果差">
+      <created>1582522578339</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582522578339</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="406111000" />
+    <option name="totallyTimeSpent" value="438023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -574,12 +500,12 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23525469" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2386059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34135976" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39235127" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.48866856" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -588,7 +514,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.28429985" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.43767706" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.2733711" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -647,60 +573,10 @@
     <MESSAGE value="0212出结果了但是很差" />
     <MESSAGE value="0212调整countEdge" />
     <MESSAGE value="0216开始测试点分类" />
-    <option name="LAST_COMMIT_MESSAGE" value="0216开始测试点分类" />
+    <MESSAGE value="0224电网模型分类效果差" />
+    <option name="LAST_COMMIT_MESSAGE" value="0224电网模型分类效果差" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/entropy/edge_entropy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entropy/countedge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="167" column="21" lean-forward="true" selection-start-line="167" selection-start-column="21" selection-end-line="167" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/preprocessed_data/ptc_fr/unzipped/PTC_FR/PTC_FR_A.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entropy/interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/data/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/dgl/data/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="130" column="4" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/powernet_interface.py" />
     <entry file="file://$PROJECT_DIR$/bin/preprocess">
       <provider selected="true" editor-type-id="text-editor">
@@ -733,20 +609,7 @@
     <entry file="file://$PROJECT_DIR$/powernet/cut_table_by_result_time.py" />
     <entry file="file://$PROJECT_DIR$/powernet/process_alarm.py" />
     <entry file="file://$PROJECT_DIR$/powernet/alarm/1577355030000.csv" />
-    <entry file="file://$PROJECT_DIR$/powernet/features/1575037935.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/powernet/alarm/1577355029000.csv" />
-    <entry file="file://$PROJECT_DIR$/utils/io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/powernet/map/map.json" />
     <entry file="file://$PROJECT_DIR$/powernet/map_times.py" />
     <entry file="file://$PROJECT_DIR$/core/utils.py">
@@ -770,13 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="663" column="15" lean-forward="true" selection-start-line="663" selection-start-column="15" selection-end-line="663" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/powernet/alarm/1575037635.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -849,13 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/torch/nn/modules/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="488" selection-start-line="488" selection-end-line="488" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/dgl/backend/pytorch/tensor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -877,61 +726,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/models/constants.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/dgl/udf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="276">
+          <caret line="146" column="25" lean-forward="true" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/models/config_files/config_edGNN_node_class.json">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/torch/nn/modules/module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/run_model">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="108" column="64" lean-forward="true" selection-start-line="108" selection-start-column="64" selection-end-line="108" selection-end-column="64" />
-          <folding>
-            <element signature="e#49#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/dgl/graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36775">
-          <caret line="1485" column="26" selection-start-line="1485" selection-start-column="26" selection-end-line="1485" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/models/layers/edgnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+        <state relative-caret-position="97">
+          <caret line="488" selection-start-line="488" selection-end-line="488" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/data/dortmund.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2875">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        <state relative-caret-position="321">
+          <caret line="154" column="60" lean-forward="true" selection-start-line="154" selection-start-column="60" selection-end-line="154" selection-end-column="60" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/powernet/power_interface.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/powernet/pre_powernet.py">
+    <entry file="file://$PROJECT_DIR$/powernet/alarm/1575037635.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        <state relative-caret-position="274">
+          <caret line="673" column="1" lean-forward="true" selection-start-line="673" selection-start-column="1" selection-end-line="673" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/powernet/2-26.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/models/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="19" selection-start-line="12" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/dgl/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="1467" column="19" lean-forward="true" selection-start-line="1467" selection-start-column="19" selection-end-line="1467" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/acc_file.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-842">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/models/layers/rgcn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="64" column="12" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/models/config_files/config_edGNN_node_class.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/powernet/features/1575037935.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
@@ -940,18 +824,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/app.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="203" column="26" selection-start-line="203" selection-start-column="26" selection-end-line="203" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/powernet/power_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/models/layers/edgnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-647">
+          <caret line="73" column="49" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
+          <folding>
+            <element signature="e#44#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/run_model">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
-          <caret line="210" column="48" selection-start-line="210" selection-start-column="48" selection-end-line="210" selection-end-column="48" />
+          <caret line="98" column="10" selection-start-line="98" selection-start-column="10" selection-end-line="98" selection-end-column="10" />
+          <folding>
+            <element signature="e#49#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/models/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1542">
-          <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="8" />
+        <state relative-caret-position="114">
+          <caret line="231" column="49" selection-start-line="231" selection-start-column="49" selection-end-line="231" selection-end-column="49" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/powernet/pre_powernet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1971">
+          <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/powernet/power_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
